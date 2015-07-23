@@ -7,8 +7,8 @@ user = getpass.getuser()
 root = r"c:\hosts\\"
 
 admins = ["admin", "Admin", "Administrator"]
-backOffice = [ "Back Office", "backoffice" ]
-prof = [ "Prof", "prof" ]
+backOffice = [ "Back Office", "backoffice", "Back-Office" ]
+prof = [ "Prof", "prof", "PROF" ]
 
 hostsGeral = root + "all.hosts"
 hostsProf = root + "prof.hosts"
