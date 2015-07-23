@@ -41,17 +41,27 @@ if not os.path.exists(hostsBack): open(hostsBack, 'w').close()
 print("Running script for user: " + user)
 
 try:
-    txt = urllib.request.urlopen("http://pastebin.com/raw.php?i=x9j1jCiq")
+    allTemp = urllib.request.urlopen("https://raw.githubusercontent.com/Davidblkx/UserHosts/master/all.hosts")
+    profTemp = urllib.request.urlopen("https://raw.githubusercontent.com/Davidblkx/UserHosts/master/prof.hosts")
+    backTemp = urllib.request.urlopen("https://raw.githubusercontent.com/Davidblkx/UserHosts/master/back.hosts")
     with open(hostsGeral, "w") as text_file:
-        print(txt.read().decode(txt.headers.get_content_charset()), file=text_file)
+        print(allTemp.read().decode(allTemp.headers.get_content_charset()), file=text_file)
+    with open(hostsProf, "w") as text_file:
+        print(profTemp.read().decode(profTemp.headers.get_content_charset()), file=text_file)
+    with open(hostsBack, "w") as text_file:
+        print(backTemp.read().decode(backTemp.headers.get_content_charset()), file=text_file)
 
 except urllib.request.URLError as err: print(err)
 
-if not is_admin(user):
-    shutil.copyfile(hostsGeral, host)
-else:
+if is_admin(user):
     with open(host, "w") as text_file:
         print("#empty", file=text_file)
+elif is_prof(user):
+    shutil.copyfile(hostsProf, host)
+elif is_backoffice(user):
+    shutil.copyfile(hostsBack, host)
+else:
+    shutil.copyfile(hostsGeral, host)
     
 
 print("DONE")
