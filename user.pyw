@@ -4,17 +4,16 @@ import os
 import shutil
 
 user = getpass.getuser()
+root = r"c:\hosts\\"
 
 admins = ["admin", "Admin", "Administrator"]
 backOffice = [ "Back Office", "backoffice" ]
 prof = [ "Prof", "prof" ]
 
-hostsGeral = r"all.hosts"
-hostsProf = r"prof.hosts"
-hostsBack = r"back.hosts"
+hostsGeral = root + "all.hosts"
+hostsProf = root + "prof.hosts"
+hostsBack = root + "back.hosts"
 host = r"C:\WINDOWS\system32\drivers\etc\hosts"
-
-path = "http://pastebin.com/raw.php?i=x9j1jCiq"
 
 def is_admin(str):
     for x in admins:
@@ -34,6 +33,7 @@ def is_prof(str):
             return True
     return False
 
+if not os.path.exists(root): os.makedirs(root)
 if not os.path.exists(hostsGeral): open(hostsGeral, 'w').close()
 if not os.path.exists(hostsProf): open(hostsProf, 'w').close()
 if not os.path.exists(hostsBack): open(hostsBack, 'w').close() 
