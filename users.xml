@@ -1,0 +1,35 @@
+<users>
+
+  <user name="Admin" link="sudo">
+    <account>admin</account>
+    <account>administrator</account>
+  </user>
+
+  <user name="Gestao" link="http://www.google.pt">
+    <account>anabela martins</account>
+    <account>zélia martins</account>
+    <account>jose antonio</account>
+  </user>
+
+  <user name="BackOffice" link="http://www.google.pt">
+    <account>backoffice</account>
+    <account>back-office</account>
+    <account>back office</account>
+  </user>
+
+  <user name="FrontOffice" link="http://www.google.pt">
+    <account>frontoffice</account>
+    <account>front-office</account>
+    <account>front office</account>
+  </user>
+
+  <user name="Prof" link="http://www.google.pt">
+    <account>prof</account>
+  </user>
+
+  <user name="Alunos" link="http://www.google.pt">
+    <account>alunos</account>
+    <account>aluno</account>
+  </user>
+
+</users>
