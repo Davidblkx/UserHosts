@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <users>
-
   <user name="Admin">
     <account>admin</account>
     <account>administrator</account>
@@ -45,5 +45,4 @@
     <link>Social.Hosts</link>
     <link>Default.Hosts</link>
   </user>
-
 </users>
