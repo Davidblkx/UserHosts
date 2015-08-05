@@ -1,35 +1,49 @@
 <users>
 
-  <user name="Admin" link="sudo">
+  <user name="Admin">
     <account>admin</account>
     <account>administrator</account>
   </user>
 
-  <user name="Gestao" link="http://www.google.pt">
+  <user name="Gestao">
     <account>anabela martins</account>
     <account>zélia martins</account>
     <account>jose antonio</account>
+    <link>Security.Hosts</link>
+    <link>Gestao.Hosts</link>
   </user>
 
-  <user name="BackOffice" link="http://www.google.pt">
+  <user name="BackOffice">
     <account>backoffice</account>
     <account>back-office</account>
     <account>back office</account>
+    <link>Security.Hosts</link>
+    <link>Social.Hosts</link>
+    <link>BackOffice.Hosts</link>
   </user>
 
-  <user name="FrontOffice" link="http://www.google.pt">
+  <user name="FrontOffice">
     <account>frontoffice</account>
     <account>front-office</account>
     <account>front office</account>
+    <link>Security.Hosts</link>
+    <link>Social.Hosts</link>
+    <link>FrontOffice.Hosts</link>
   </user>
 
-  <user name="Prof" link="http://www.google.pt">
+  <user name="Prof" >
     <account>prof</account>
+    <link>Security.Hosts</link>
+    <link>Prof.hosts</link>
   </user>
 
-  <user name="Alunos" link="http://www.google.pt">
+  <user name="Alunos">
     <account>alunos</account>
     <account>aluno</account>
+    <link>Gaming.Hosts</link>
+    <link>Security.Hosts</link>
+    <link>Social.Hosts</link>
+    <link>Default.Hosts</link>
   </user>
 
 </users>
