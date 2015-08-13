@@ -1,4 +1,4 @@
-import os
+import os, stat
 
 current = os.path.dirname(os.path.abspath(__file__))
 
