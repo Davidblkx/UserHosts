@@ -34,7 +34,7 @@
   <user name="Prof" >
     <account>prof</account>
     <link>Security.Hosts</link>
-    <link>Prof.Hosts</link>
+    <link>prof.hosts</link>
   </user>
 
   <user name="Alunos">
